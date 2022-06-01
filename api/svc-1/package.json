@@ -1,0 +1,11 @@
+{
+  "name": "svc-1",
+  "version": "0.1.0",
+  "description": "API svc 1",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Igvir",
+  "license": "ISC"
+}
