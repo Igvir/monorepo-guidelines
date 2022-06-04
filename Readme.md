@@ -1,6 +1,6 @@
 # Desarrollo de aplicaciones con arquitectura monorepositorio
 
-Dentro de los conceptos relacionado al desarrollo *Agile*, hay varios elementos necesarios para lograr que no solo el diseño sino también la construcción responda a la necesidad de comunicación continua, estandarización y eficiencia. Uno de estos elementos es la gestión del código fuente que, sin ser el único factor involucrado, puede ser el punto de partida para los beneficios o los problemas de la solución.
+El desarrollo de software utilizando arquitecturas de microservicios, desarrollo ágil y despliegues continuos, hay varios elementos necesarios para lograr que no solo el diseño sino también la construcción responda a la necesidad de comunicación continua, estandarización y eficiencia. Uno de estos elementos es la gestión del código fuente que, sin ser el único factor involucrado, puede ser el punto de partida para los beneficios o los problemas de la solución.
 Cuando nos involucramos en el delivery de soluciones con capacidad de escalar a un nivel empresarial, hay que tener en consideración estrategias de gestión de todos los recursos y muy especialmente de la gestión del código ya que es muy fácil dejarse llevar por la tentación de construir y postergar la definición de lineamientos o incluso se pierden de vista y al no aplicarse desde el inicio, generan un efecto de bola de nieve y se vuelve un tema más grande a medida que el proyecto avanza.
 Tener un lineamiento inicial, fomentar una disciplina interna de uso de estas línea de instrucción y hacerlas propias de la construcción, facilita que el proceso se vuelva natural al punto que todos puedan "saltar" al proceso de construcción con una estrategia exitosa.
 
@@ -22,11 +22,14 @@ Mono-repositorios, *Mono-repository* o simplemente *monorepo* como se les conoce
 ---
 *Tabla 1: Estructuras de repositorio de código fuente*
 
-### 3. ¿Qué es un repositorio?
+### 3. ¿Qué es un repositorio código?
+
+Un repositorio de código es el lugar en el que se almacena y se puede realizar la distribución del código fuente de una aplicación de software.En el entorno empresarial, el repositorio de código debe ser un servidor seguro que utiliza sistemas de control de versiones para facilitar la coordinación del equipo de desarrollo. El repositorio debe contener las diferentes versiones de la aplicación, el historial de cambios realizados y los cambios aplicados sobre cada nueva versión. Además, debe permitir poder revertir, de ser necesario, esos cambios. Para cumplir su cometido, el repositorio debe permitir  acceso seguro y en paralelo a los diferentes usuarios involucrados en e equipo de desarrollo, bien sea que estos requieran trabajar en la misma o en sus diferentes versiones.
 
 
+### 4. CI/CD
 
-### CI/CD
+El término CI/CD proviene de las siglas en inglés: *Continuous integration and Continuous delivery*. Es un método para entregar aplicaciones de manera frecuente aprovechando las ventajas de la automatización en las diferentes etapas de desarrollo de aplicaciones. Los principales conceptos atribuidos a CI/CD son integración continua, entrega continua e implementación continua. 
 
 
 ## Referencias
