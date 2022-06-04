@@ -8,20 +8,23 @@ Tener un lineamiento inicial, fomentar una disciplina interna de uso de estas l�
 
 ## Conceptos
 
+### 1. ¿Qué es un monorepo?
+Mono-repositorios, *Mono-repository* o simplemente *monorepo* como se les conoce en inglés es una estrategia de gestión del control de versiones de código fuente que consiste en agrupar en un único repositorio de código todos los componentes de la solución.
 
+### 2. Estructuras de repositorio de código fuente
 ---
 |       Estructura       |                    Implementación             |                              Implementada  por                          |
 | :--------------------: | :--------------------------------------------------------------------: | :--------------------------------------------------------------------: |
 | Multiples repositorios |   Un repositorio para cada componente o librería de código   |   Amazon, Netflix , Lyft                             |
 |    Mono-repositorio    | Un repositorio para todos los componentes o incluso para toda la compañía | Google, Facebook, Microsoft, Uber, Twitter, React, Angular, Babel, Kubernetes |
-| Híbrido: Multirepo manejados como  monorepositorio | Los cambios se realizan en multiples repositorios pero se gestionan como un monorepo  | Android, chrome |
+| Híbrido: Multirepos manejados como  monorepositorio | Los cambios se realizan en multiples repositorios pero se gestionan como un monorepo  | Android, chrome |
 | Híbrido: Monorepo manejado como multi | Las cambios se realizan en un monorepo pero luego se dividen en multiples repositorios de solo lectura para construcción o distribución | Symfony, Shopsys | 
 ---
 *Tabla 1: Estructuras de repositorio de código fuente*
-### ¿Qué es un repositorio?
 
-### ¿Qué es un monorepo?
-Mono-repositorios, *Mono-repository* o simplemente *monorepo* como se les conoce en inglés es una estrategia de gestión del control de versiones de código fuente que consiste en agrupar en un único repositorio de código todos los componentes de la solución.
+### 3. ¿Qué es un repositorio?
+
+
 
 ### CI/CD
 
