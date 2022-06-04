@@ -9,7 +9,8 @@ Tener un lineamiento inicial, fomentar una disciplina interna de uso de estas l�
 ## Conceptos
 
 ### 1. ¿Qué es un monorepo?
-Mono-repositorios, *Mono-repository* o simplemente *monorepo* como se les conoce en inglés es una estrategia de gestión del control de versiones de código fuente que consiste en agrupar en un único repositorio de código todos los componentes de la solución.
+Monorepositorios, *Mono-repository* o simplemente *monorepo* como se les conoce también en inglés, es un concepto de arquitectura y una estrategia de gestión  del código fuente que consiste en agrupar en un único repositorio de código todos los componentes de la solución.
+Un Monorepositorio en lugar de administrar múltiples repositorios, mantiene todas sus partes de código aisladas dentro de un repositorio. Pero el concepto de aislamiento aquí no debe confundirse, un monorepositorio es una estrategia de gestión y no implica crear aplicaciones monolíticas.  Generalmente es todo lo contrario, el concepto mantiene la correcta separación de dependencias que las arquitecturas de microservicios requieren y su uso no compromete otros principios de desarrollo.
 
 ### 2. Estructuras de repositorio de código fuente
 ---
