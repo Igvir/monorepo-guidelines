@@ -38,6 +38,10 @@ El término CI/CD proviene de las siglas en inglés: *Continuous integration and
 
 ## Referencias
 
+=======
+
+## Referencias
+
 * [Monorepo](https://en.wikipedia.org/wiki/Monorepo)
 * [Monorepo’s for Microservices Architecture](https://dzone.com/articles/monorepos-for-microservices-commerce-architecture)
 * [Lerna.js](https://lerna.js.org/)
