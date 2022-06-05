@@ -4,9 +4,6 @@ authors:
 - family-names: "Ramirez V."
   given-names: "Igvir"
   orcid: "https://orcid.org/0000-0000-0000-0000"
-- family-names: "Bot"
-  given-names: "Hew"
-  orcid: "https://orcid.org/0000-0000-0000-0000"
 title: "Desarrollo de aplicaciones con arquitectura monorepositorio"
 version: 2.0.4
 doi: 10.5281/zenodo.1234
