@@ -32,6 +32,7 @@ Un repositorio de código es el lugar en el que se almacena y se puede realizar 
 
 El término CI/CD proviene de las siglas en inglés: *Continuous integration and Continuous delivery*. Es un método para entregar aplicaciones de manera frecuente aprovechando las ventajas de la automatización en las diferentes etapas de desarrollo de aplicaciones. Los principales conceptos atribuidos a CI/CD son integración continua, entrega continua e implementación continua. 
 
+
 ## Agradecimientos
 
 Foto de [Emile Perron, 2017, Unsplash](https://unsplash.com/photos/xrVDYZRGdw4?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
@@ -44,7 +45,6 @@ Foto de [Emile Perron, 2017, Unsplash](https://unsplash.com/photos/xrVDYZRGdw4?u
 * [How to structure microservices in your repository](https://softwareengineering.stackexchange.com/questions/386066/how-to-structure-microservices-in-your-repository)
 * [From Monolith to Monorepo](https://medium.com/@brockreece/from-monolith-to-monorepo-19d78ffe9175)
 * GBM Release Management para Software, IN-COT-005, Marzo 2022
-* The Issue of Monorepo and Polyrepo In Large
-Enterprises, Nicolas Brousse, 2019 
+* The Issue of Monorepo and Polyrepo In Large Enterprises, Nicolas Brousse, 2019 
 * [Monorepo, Manyrepo, Metarepo. 2017](https://notes.burke.libbey.me/metarepo/)
 * [Automatically detect changes and initiate different CodePipeline pipelines for a monorepo in CodeCommit](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/automatically-detect-changes-and-initiate-different-codepipeline-pipelines-for-a-monorepo-in-codecommit.html)
