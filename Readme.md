@@ -32,13 +32,9 @@ Un repositorio de código es el lugar en el que se almacena y se puede realizar 
 
 El término CI/CD proviene de las siglas en inglés: *Continuous integration and Continuous delivery*. Es un método para entregar aplicaciones de manera frecuente aprovechando las ventajas de la automatización en las diferentes etapas de desarrollo de aplicaciones. Los principales conceptos atribuidos a CI/CD son integración continua, entrega continua e implementación continua. 
 
-### Agradecimientos
+## Agradecimientos
 
-[Foto de Emile Perron, 2017, Unsplash](https://unsplash.com/photos/xrVDYZRGdw4?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
-
-## Referencias
-
-=======
+Foto de [Emile Perron, 2017, Unsplash](https://unsplash.com/photos/xrVDYZRGdw4?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
 
 ## Referencias
 
