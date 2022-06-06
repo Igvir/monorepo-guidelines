@@ -6,6 +6,8 @@ Tener un lineamiento inicial, fomentar una disciplina interna de uso de estas l�
 
 ## Resumen
 
+Monorepos (repositorios monolíticos) son utilizados por grandes empresas, como Google y Facebook, y por proyectos populares de código abierto, como [React](https://github.com/facebook/react/tree/master/packages), [Laravel](https://laravel.com/), [Babel](https://github.com/babel/babel/blob/master/doc/design/monorepo.md) o [NixOS](https://github.com/NixOS/nixpkgs/). Esta estudio realiza un recorrido por los conceptos para dar visión general de la definición y las características de los monorepos, así como de sus beneficios y desafíos. Con el apoyo de la investigación bibliográfica se plantearon alguna preguntas de investigación para luego realizar una propuesta de  lineamientos generales para el desarrollo de aplicaciones con arquitectura monorepositorio. 
+
 ## Conceptos
 
 ### 1. ¿Qué es un repositorio código?
