@@ -6,7 +6,7 @@ Tener un lineamiento inicial, fomentar una disciplina interna de uso de estas l�
 
 ## Resumen
 
-Monorepos (repositorios monolíticos) son utilizados por grandes empresas, como Google y Facebook, y por proyectos populares de código abierto, como [React](https://github.com/facebook/react/tree/master/packages), [Laravel](https://laravel.com/), [Babel](https://github.com/babel/babel/blob/master/doc/design/monorepo.md) o [NixOS](https://github.com/NixOS/nixpkgs/). Esta trabajo realiza un recorrido por los conceptos para dar visión general de la definición, las características de una estructura multi-repositorio, y las características de los monorepos, así como de sus beneficios y desafíos. Con el apoyo de la investigación bibliográfica se plantearon alguna preguntas de investigación para luego realizar una propuesta de  lineamientos generales para el desarrollo de aplicaciones con arquitectura monorepositorio. Los hallazgos son varios pero destacan principalmente  en dos areas. En primer lugar  en el area técnica, donde el uso de herramientas y técnicas representa un elemento de decision que considere los beneficios, la relaciones entre los diferentes proyectos y los retos a la hora de elegir arquitectura monorepositorio. Otra área en la que la investigación encontró hallazgos fue el del entorno organizacional, se encontraron referencias a elementos culturales relevantes en el éxito de la adopción de arquitectura monorepositorio.  Actualmente, se puede observar un aumento en los sistemas de TI complejidad impulsada por la adopción de arquitectura orientada a servicios, microservicios y sin servidor. Por lo tanto, las empresas se benefician de un repositorio único debido a la mejora del conocimiento del equipo que resulta de la disminución de las barreras entre ellos que típicamente se presentan en el trabajo interdepartmental, facilita la movilidad de los desarrolladores y puede influir en la mejora de la calidad del trabajo en equipo. Los desafíos puede ser importantes por lo que se debe la salud del código, la complejidad de la solución y la inversión en tiempo para incorporar  herramientas tanto para el desarrollo como para la ejecución. 
+Los Monorepos (repositorios monolíticos), son utilizados por grandes empresas, como Google y Facebook, y por proyectos de código abierto de gran alcance como: [React](https://github.com/facebook/react/tree/master/packages), [Laravel](https://laravel.com/), [Babel](https://github.com/babel/babel/blob/master/doc/design/monorepo.md) o [NixOS](https://github.com/NixOS/nixpkgs/). Esta trabajo realiza un recorrido por los conceptos para dar visión general de la definición, las características de una estructura multi-repositorio, y las características de los monorepos, así como de sus beneficios y desafíos. Con el apoyo de la investigación bibliográfica se plantearon alguna preguntas de investigación para luego realizar una propuesta de  lineamientos generales para el desarrollo de aplicaciones con arquitectura monorepositorio. Los hallazgos son varios pero destacan principalmente  en dos areas. En primer lugar  en el area técnica, donde el uso de herramientas y técnicas representa un elemento de decision que considere los beneficios, la relaciones entre los diferentes proyectos y los retos a la hora de elegir arquitectura monorepositorio. Otra área en la que la investigación encontró hallazgos fue el del entorno organizacional, se encontraron referencias a elementos culturales relevantes en el éxito de la adopción de arquitectura monorepositorio.  Actualmente, se puede observar un aumento en los sistemas de TI complejidad impulsada por la adopción de arquitectura orientada a servicios, microservicios y sin servidor. Por lo tanto, las empresas se benefician de un repositorio único debido a la mejora del conocimiento del equipo que resulta de la disminución de las barreras entre ellos que típicamente se presentan en el trabajo interdepartmental, facilita la movilidad de los desarrolladores y puede influir en la mejora de la calidad del trabajo en equipo. Los desafíos puede ser importantes por lo que se debe la salud del código, la complejidad de la solución y la inversión en tiempo para incorporar  herramientas tanto para el desarrollo como para la ejecución. 
 
 ## Conceptos
 
@@ -21,7 +21,11 @@ Monorepositorios, *Mono-repository* o simplemente *monorepo* como se les conoce 
 Un Monorepositorio en lugar de administrar múltiples repositorios, mantiene todas sus partes de código aisladas dentro de un repositorio. Pero el concepto de aislamiento aquí no debe confundirse, un monorepositorio es una estrategia de gestión y no implica crear aplicaciones monolíticas.  Generalmente es todo lo contrario, el concepto mantiene la correcta separación de dependencias que las arquitecturas de microservicios requieren y su uso no compromete otros principios de desarrollo.
 Una característica importante para un monorepo es que, si bien contiene múltiples proyectos distintos, estos deben tener entre ellos relaciones bien definidas. El monorepo no se trata de colocar el código en un solo repositorio, si no hay relaciones bien definidas entre los proyecto, no se denomina monorepo. 
 
-### 3. Estructuras de repositorio de código fuente
+### 3. ¿Qué es un multirepositorio?
+
+El enfoque multirepositorio, como su nombre lo indica, utiliza varios repositorios para albergar las múltiples componentes, librerías o servicios de un proyecto desarrollado por una empresa. En su forma más extrema, alojará cada conjunto mínimo de código reutilizable o funcionalidad independiente (como un microservicio) en su repositorio.
+
+### 4. Estructuras de repositorio de código fuente
 ---
 |       Estructura       |                    Implementación             |                              Implementada  por                          |
 | :--------------------: | :--------------------------------------------------------------------: | :--------------------------------------------------------------------: |
@@ -32,7 +36,7 @@ Una característica importante para un monorepo es que, si bien contiene múltip
 ---
 *Tabla 1: Estructuras de repositorio de código fuente*
 
-### 4. CI/CD
+### 5. CI/CD
 
 El término CI/CD proviene de las siglas en inglés: *Continuous integration and Continuous delivery*. Es un método para entregar aplicaciones de manera frecuente aprovechando las ventajas de la automatización en las diferentes etapas de desarrollo de aplicaciones. Los principales conceptos atribuidos a CI/CD son integración continua, entrega continua e implementación continua. 
 
@@ -54,3 +58,5 @@ Foto de [Emile Perron, 2017, Unsplash](https://unsplash.com/photos/xrVDYZRGdw4?u
 * [Automatically detect changes and initiate different CodePipeline pipelines for a monorepo in CodeCommit](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/automatically-detect-changes-and-initiate-different-codepipeline-pipelines-for-a-monorepo-in-codecommit.html)
 * [Savkin, V., Misconceptions about Monorepos: Monorepo != Monolith, 2019](https://blog.nrwl.io/misconceptions-about-monorepos-monorepo-monolith-df1250d4b03c)
 * [Monorepo tools](https://monorepo.tools/)
+* [Monorepo vs Multi-Repo: Pros and Cons of Code Repository Strategies, 2022](https://kinsta.com/blog/monorepo-vs-multi-repo/)
+  
