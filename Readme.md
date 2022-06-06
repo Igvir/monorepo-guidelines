@@ -49,8 +49,19 @@ La investigación arrojó que varios autores coinciden en algunas ventajas asoci
 - Refactorización simplificada: en entornos de desarrollos ágiles la capacidad de descartar una ruta que no función o de reestructurar el código para tomar un camino no anticipado es muy importante. Desde cambiar un nombre o ajustar una dependencia, la refactorización es más simple y puede requerir un único comando para afectar a toda la solución o el area de alcance con un mínimo de sobrecarga asociada al cambio de contexto ya que todo está ordenado en un solo lugar bajo convenciones que facilitan su comprensión.
 - Simplificación del proceso de automatización y pruebas: El enfoque monorepositorio ofrece también un único lugar para almacenar todas las configuraciones y pruebas. Dado que todo se encuentra dentro de un repositorio, es posible  configurar los procesos de CI/CD y el paquete una vez y luego simplemente reutilizar las configuraciones para compilar todos los paquetes antes de publicarlos en forma remota. Lo mismo ocurre con las pruebas unitarias, e2e y de integración: los procesos de CI pueden ser configurados para realizar todas las pruebas asociadas sin tener que lidiar con una configuración adicional.
 - Facilidad para reutilizar el código con paquetes compartidos mientras se mantienen aislados. El enfoque monorepo permite reutilizar paquetes como referencias comunes que se compilan y consumen desde un único punto de entrada  mientras que se mantienen aislados los servicios unos de otros. 
+  
+ ## Desventajas de la arquitectura monorepositorio
+
+Algunos elementos asociados a la adopción del enfoque monorepositorio representan una desventaja para el entorno empresarial:
+
+- Herramientas no-estándar/personalizadas: gran parte de las herramientas disponibles para la gestión del código fueron creadas a partir de la idea de manejar todo el contenido del repositorio como un único artefacto. La gestión monorepositorio, sin embargo, requiere la capacidad de diferenciar entre espacios de trabajo. si bien algunas herramientas han mejorado su soporte aun es posible que la gestión de las herramientas para CI/CD represente, durante la adopción, una carga de trabajo del equipo que desee manejar un enfoque monorepositorio.
+- Ofrece mayores beneficios a organizaciones más grandes: La arquitectura monorepositorio escala sus beneficios en proporción al tamaño del equipo de desarrollo, así, organizaciones más grandes se verán más beneficiadas con su uso en comparación a aquellas con equipos pequeños.
+-  Monorepos con herramientas y/o procesos deficientes probablemente se desempeñen peor en áreas de: pruebas,
+seguimiento de dependencias, reutilización de código y  revisión de código se se les compara con enfoques multirepos con herramientas y/o procesos deficientes. La adopción del enfoque monorepositorio demandará más disciplina y cumplimiento de procesos y convenciones al equipo de desarrollo y a la organización. 
+
 
 ## Agradecimientos
+
 El autor desea agradecer el confiable servicio de [Github](https://github.com/) por facilitar la elaboración de este trabajo. Al equipo de Delivery y Software Factory de GBM Corp.  por su contribución a este trabajo. El autor también quisiera expresar su agradecimiento a Emile Perron por permitir el uso de su fotografía vía [Unsplash](https://unsplash.com/photos/xrVDYZRGdw4?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink).
 
 ## Referencias
@@ -67,4 +78,5 @@ El autor desea agradecer el confiable servicio de [Github](https://github.com/) 
 * [Savkin, V., Misconceptions about Monorepos: Monorepo != Monolith, 2019](https://blog.nrwl.io/misconceptions-about-monorepos-monorepo-monolith-df1250d4b03c)
 * [Monorepo tools](https://monorepo.tools/)
 * [Monorepo vs Multi-Repo: Pros and Cons of Code Repository Strategies, 2022](https://kinsta.com/blog/monorepo-vs-multi-repo/)
+* [Monorepo, Manyrepo, Metarepo](https://notes.burke.libbey.me/metarepo/)
   
