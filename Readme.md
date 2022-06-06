@@ -8,13 +8,18 @@ Tener un lineamiento inicial, fomentar una disciplina interna de uso de estas l�
 
 ## Conceptos
 
-### 1. ¿Qué es un monorepo?
+### 1. ¿Qué es un repositorio código?
+
+Un repositorio de código es el lugar en el que se almacena y se puede realizar la distribución del código fuente de una aplicación de software.En el entorno empresarial, el repositorio de código debe ser un servidor seguro que utiliza sistemas de control de versiones para facilitar la coordinación del equipo de desarrollo. El repositorio debe contener las diferentes versiones de la aplicación, el historial de cambios realizados y los cambios aplicados sobre cada nueva versión. Además, debe permitir poder revertir, de ser necesario, esos cambios. Para cumplir su cometido, el repositorio debe permitir  acceso seguro y en paralelo a los diferentes usuarios involucrados en e equipo de desarrollo, bien sea que estos requieran trabajar en la misma o en sus diferentes versiones.
+
+
+### 2. ¿Qué es un monorepo?
 
 Monorepositorios, *Mono-repository* o simplemente *monorepo* como se les conoce también en inglés, es un concepto de arquitectura y una estrategia de gestión  del código fuente que consiste en agrupar en un único repositorio de código todos los componentes de la solución.
 Un Monorepositorio en lugar de administrar múltiples repositorios, mantiene todas sus partes de código aisladas dentro de un repositorio. Pero el concepto de aislamiento aquí no debe confundirse, un monorepositorio es una estrategia de gestión y no implica crear aplicaciones monolíticas.  Generalmente es todo lo contrario, el concepto mantiene la correcta separación de dependencias que las arquitecturas de microservicios requieren y su uso no compromete otros principios de desarrollo.
 Una característica importante para un monorepo es que, si bien contiene múltiples proyectos distintos, estos deben tener entre ellos relaciones bien definidas. El monorepo no se trata de colocar el código en un solo repositorio, si no hay relaciones bien definidas entre los proyecto, no se denomina monorepo. 
 
-### 2. Estructuras de repositorio de código fuente
+### 3. Estructuras de repositorio de código fuente
 ---
 |       Estructura       |                    Implementación             |                              Implementada  por                          |
 | :--------------------: | :--------------------------------------------------------------------: | :--------------------------------------------------------------------: |
@@ -24,11 +29,6 @@ Una característica importante para un monorepo es que, si bien contiene múltip
 | Híbrido: Monorepo manejado como multi | Las cambios se realizan en un monorepo pero luego se dividen en multiples repositorios de solo lectura para construcción o distribución | Symfony, Shopsys | 
 ---
 *Tabla 1: Estructuras de repositorio de código fuente*
-
-### 3. ¿Qué es un repositorio código?
-
-Un repositorio de código es el lugar en el que se almacena y se puede realizar la distribución del código fuente de una aplicación de software.En el entorno empresarial, el repositorio de código debe ser un servidor seguro que utiliza sistemas de control de versiones para facilitar la coordinación del equipo de desarrollo. El repositorio debe contener las diferentes versiones de la aplicación, el historial de cambios realizados y los cambios aplicados sobre cada nueva versión. Además, debe permitir poder revertir, de ser necesario, esos cambios. Para cumplir su cometido, el repositorio debe permitir  acceso seguro y en paralelo a los diferentes usuarios involucrados en e equipo de desarrollo, bien sea que estos requieran trabajar en la misma o en sus diferentes versiones.
-
 
 ### 4. CI/CD
 
