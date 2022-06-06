@@ -10,18 +10,18 @@ Los Monorepos (repositorios monolíticos), son utilizados por grandes empresas, 
 
 ## Conceptos
 
-### 1. ¿Qué es un repositorio código?
+### 1. Repositorio código
 
 Un repositorio de código es el lugar en el que se almacena y se puede realizar la distribución del código fuente de una aplicación de software.En el entorno empresarial, el repositorio de código debe ser un servidor seguro que utiliza sistemas de control de versiones para facilitar la coordinación del equipo de desarrollo. El repositorio debe contener las diferentes versiones de la aplicación, el historial de cambios realizados y los cambios aplicados sobre cada nueva versión. Además, debe permitir poder revertir, de ser necesario, esos cambios. Para cumplir su cometido, el repositorio debe permitir  acceso seguro y en paralelo a los diferentes usuarios involucrados en e equipo de desarrollo, bien sea que estos requieran trabajar en la misma o en sus diferentes versiones.
 
 
-### 2. ¿Qué es un monorepo?
+### 2. Enfoque monorepositorio
 
 Monorepositorios, *Mono-repository* o simplemente *monorepo* como se les conoce también en inglés, es un concepto de arquitectura y una estrategia de gestión  del código fuente que consiste en agrupar en un único repositorio de código todos los componentes de la solución.
 Un Monorepositorio en lugar de administrar múltiples repositorios, mantiene todas sus partes de código aisladas dentro de un repositorio. Pero el concepto de aislamiento aquí no debe confundirse, un monorepositorio es una estrategia de gestión y no implica crear aplicaciones monolíticas.  Generalmente es todo lo contrario, el concepto mantiene la correcta separación de dependencias que las arquitecturas de microservicios requieren y su uso no compromete otros principios de desarrollo.
 Una característica importante para un monorepo es que, si bien contiene múltiples proyectos distintos, estos deben tener entre ellos relaciones bien definidas. El monorepo no se trata de colocar el código en un solo repositorio, si no hay relaciones bien definidas entre los proyecto, no se denomina monorepo. 
 
-### 3. ¿Qué es un multirepositorio?
+### 3. Enfoque multirepositorio
 
 El enfoque multirepositorio, como su nombre lo indica, utiliza varios repositorios para albergar las múltiples componentes, librerías o servicios de un proyecto desarrollado por una empresa. En su forma más extrema, alojará cada conjunto mínimo de código reutilizable o funcionalidad independiente (como un microservicio) en su repositorio.
 
@@ -40,6 +40,15 @@ El enfoque multirepositorio, como su nombre lo indica, utiliza varios repositori
 
 El término CI/CD proviene de las siglas en inglés: *Continuous integration and Continuous delivery*. Es un método para entregar aplicaciones de manera frecuente aprovechando las ventajas de la automatización en las diferentes etapas de desarrollo de aplicaciones. Los principales conceptos atribuidos a CI/CD son integración continua, entrega continua e implementación continua. 
 
+## Ventajas de la arquitectura monorepositorio
+
+La investigación arrojó que varios autores coinciden en algunas ventajas asociadas al uso del enfoque monorepositorio:
+
+- Promueve la cultura de trabajo: con la adopción de monorepo, cada individuo en la organización es consciente de los objetivos comerciales y esto lo convierte en un equipo unificado y, por lo tanto, puede contribuir más específicamente hacia las metas y objetivos de la organización.
+- Mejor coordinación y facilita la rotación de roles entre desarrolladores: los desarrolladores pueden ejecutar fácilmente toda la plataforma en su entorno de trabajo y esto les ayuda a comprender todos los servicios, sus relaciones y las interacciones que ocurren cuando funcionan juntos. Esto  contribuye no solo al conocimiento sino también a la calidad de la solución, al permitir la detección de errores incluso antes de enviar el código al repositorio central.
+- Refactorización simplificada: en entornos de desarrollos ágiles la capacidad de descartar una ruta que no función o de reestructurar el código para tomar un camino no anticipado es muy importante. Desde cambiar un nombre o ajustar una dependencia, la refactorización es más simple y puede requerir un único comando para afectar a toda la solución o el area de alcance con un mínimo de sobrecarga asociada al cambio de contexto ya que todo está ordenado en un solo lugar bajo convenciones que facilitan su comprensión.
+- Simplificación del proceso de automatización y pruebas: El enfoque monorepositorio ofrece también un único lugar para almacenar todas las configuraciones y pruebas. Dado que todo se encuentra dentro de un repositorio, es posible  configurar los procesos de CI/CD y el paquete una vez y luego simplemente reutilizar las configuraciones para compilar todos los paquetes antes de publicarlos en forma remota. Lo mismo ocurre con las pruebas unitarias, e2e y de integración: los procesos de CI pueden ser configurados para realizar todas las pruebas asociadas sin tener que lidiar con una configuración adicional.
+- Facilidad para reutilizar el código con paquetes compartidos mientras se mantienen aislados. El enfoque monorepo permite reutilizar paquetes como referencias comunes que se compilan y consumen desde un único punto de entrada  mientras que se mantienen aislados los servicios unos de otros. 
 
 ## Agradecimientos
 
