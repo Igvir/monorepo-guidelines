@@ -39,7 +39,11 @@ El enfoque multi-repositorio, como su nombre lo indica, utiliza varios repositor
 
 ### 5. CI/CD
 
-El término CI/CD proviene de las siglas en inglés: *Continuous integration and Continuous delivery*. Es un método para entregar aplicaciones de manera frecuente aprovechando las ventajas de la automatización en las diferentes etapas de desarrollo de aplicaciones. Los principales conceptos atribuidos a CI/CD son integración continua, entrega continua e implementación continua. 
+El término CI/CD proviene de las siglas en inglés: *Continuous integration and Continuous delivery*. Es un método para entregar aplicaciones de manera frecuente aprovechando las ventajas de la automatización en las diferentes etapas de desarrollo de aplicaciones. Los principales conceptos atribuidos a CI/CD son integración continua, entrega continua e implementación continua.
+
+### 6. Arquitectura de Micro-servicios
+
+La arquitectura de micro-servicios, también conocidos como micro-servicios, son un estilo arquitectónico que estructura una aplicación como una colección de servicios con bajo acoplamiento para implementar capacidades de negocio. La arquitectura de micro-servicios permite la entrega/implementación continua de aplicaciones grandes y complejas. También permite que una organización modernice la base tecnológica de sus aplicaciones.
 
 ## Ventajas de la arquitectura mono-repositorio
 
