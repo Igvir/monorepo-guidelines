@@ -3,9 +3,10 @@ message: "Si usa este documento, por favor incluya la cita a continuación."
 authors:
 - family-names: "Ramirez V."
   given-names: "Igvir"
-  orcid: "https://orcid.org/0000-0000-0000-0000"
+  orcid: "https://orcid.org/0000-0001-6850-1344"
 title: "Desarrollo de aplicaciones con arquitectura monorepositorio"
-version: 2.0.4
-doi: 10.5281/zenodo.1234
+version: 0.1.4
 date-released: 2022-06-06
-url: "https://github.com/github/linguist"
+url: "https://github.com/Igvir/monorepo-rules"
+preferred-citation:
+  type: article
