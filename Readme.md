@@ -51,8 +51,7 @@ La investigación arrojó que varios autores coinciden en algunas ventajas asoci
 - Facilidad para reutilizar el código con paquetes compartidos mientras se mantienen aislados. El enfoque monorepo permite reutilizar paquetes como referencias comunes que se compilan y consumen desde un único punto de entrada  mientras que se mantienen aislados los servicios unos de otros. 
 
 ## Agradecimientos
-
-Foto de [Emile Perron, 2017, Unsplash](https://unsplash.com/photos/xrVDYZRGdw4?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
+El autor desea agradecer el confiable servicio de [Github](https://github.com/) por facilitar la elaboración de este trabajo. Al equipo de Delivery y Software Factory de GBM Corp.  por su contribución a este trabajo. El autor también quisiera expresar su agradecimiento a Emile Perron por permitir el uso de su fotografía vía [Unsplash](https://unsplash.com/photos/xrVDYZRGdw4?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink).
 
 ## Referencias
 
