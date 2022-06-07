@@ -18,7 +18,7 @@ Un repositorio de código es el lugar en el que se almacena y se puede realizar 
 
 ### 2. Enfoque mono-repositorio
 
-Mono-repositorios, *Mono-repository* o simplemente *mono-repo* como se les conoce también en inglés, es un concepto de arquitectura y una estrategia de gestión  del código fuente que consiste en agrupar en un único repositorio de código todos los componentes de la solución.
+Mono-repositorios, *Mono-repository* o simplemente *mono-repo* como se les conoce también en inglés, es un concepto de arquitectura y una estrategia de gestión [1] del código fuente que consiste en agrupar en un único repositorio de código todos los componentes de la solución.
 Un Mono-repositorio en lugar de administrar múltiples repositorios, mantiene todas sus partes de código aisladas dentro de un repositorio. Pero el concepto de aislamiento aquí no debe confundirse, un mono-repositorio es una estrategia de gestión y no implica crear aplicaciones monolíticas.  Generalmente es todo lo contrario, el concepto mantiene la correcta separación de dependencias que las arquitecturas de micro-servicios requieren y su uso no compromete otros principios de desarrollo.
 Una característica importante para un mono-repo es que, si bien contiene múltiples proyectos distintos, estos deben tener entre ellos relaciones bien definidas. El mono-repo no se trata de colocar el código en un solo repositorio, si no hay relaciones bien definidas entre los proyecto, no se denomina mono-repo. 
 
@@ -35,7 +35,7 @@ El enfoque multi-repositorio, como su nombre lo indica, utiliza varios repositor
 | Híbrido: Multi-repositorios manejados como  mono-repositorio | Los cambios se realizan en multiples repositorios pero se gestionan como un mono-repo  | Android, chrome |
 | Híbrido: Mono-repo manejado como multi | Las cambios se realizan en un mono-repo pero luego se dividen en multiples repositorios de solo lectura para construcción o distribución | Symfony, Shopsys | 
 ---
-*Tabla 1: Estructuras de repositorio de código fuente*
+*Tabla 1: Estructuras de repositorio de código fuente* [7, 16]
 
 ### 5. CI/CD
 
@@ -64,6 +64,10 @@ Algunos elementos asociados a la adopción del enfoque mono-repositorio represen
 -  Mono-repositorios con herramientas y/o procesos deficientes probablemente se desempeñen peor en áreas de: pruebas,
 seguimiento de dependencias, reutilización de código y  revisión de código se se les compara con enfoques multi-repos con herramientas y/o procesos deficientes. La adopción del enfoque mono-repositorio demandará más disciplina y cumplimiento de procesos y convenciones al equipo de desarrollo y a la organización. 
 
+## Cultura organizacional
+
+La selección de la arquitectura mono-repositorio no debe asumirse como elemento puramente técnico. El modelo tiene ya varios años aplicandose y varias grandes empresas de software han optado por este enfoque para la organización de su código, incluidas Facebook, Google y Microsoft. Si bien la literatura consultada [7] indica que los estudios sobre el tema no son abundantes y que las referencias más comunes se encuentran en publicaciones y textos en internet [16]. Teniendo en cuenta que  entre las desventajas  del uso del repositoio único radica en el hecho de que *"algunos de los problemas asociados con multi-repositorios aún deben resolverse de alguna manera en un mono-repositorio"*[7], se hace necesario indagar sobre los elementos del entorno organizacional han permitido implementar exitosamente arquitecturas mono-repostorio en grandes empresas. 
+Netflix, un referente en desarrollo de micro-servicios y metodologías ágiles,y que utiliza un enfoque multi-repositorio en concordancia favorece una cultura de "libertad y responsabilidad" que "faculta a los ingenieros para crear soluciones utilizando cualquier herramienta que sienten que son las más adecuadas para las tareas".
 
 ## Agradecimientos
 
@@ -71,17 +75,22 @@ El autor desea agradecer el confiable servicio de [Github](https://github.com/) 
 
 ## Referencias
 
-1. [Monorepo, Wikipedia](https://en.wikipedia.org/wiki/Monorepo)
+1. Wikipedia. 2022. Monorepo. Retrieved Jun 2, 2022 from https://en.wikipedia.org/wiki/Monorepo 
 2. [Monorepo’s for Microservices Architecture](https://dzone.com/articles/monorepos-for-microservices-commerce-architecture)
-2. [Lerna.js](https://lerna.js.org/)
+3. Lerna.js [https://lerna.js.org/](https://lerna.js.org/)
 4. [How to structure microservices in your repository](https://softwareengineering.stackexchange.com/questions/386066/how-to-structure-microservices-in-your-repository)
 5. [From Monolith to Monorepo](https://medium.com/@brockreece/from-monolith-to-monorepo-19d78ffe9175)
-6. GBM Release Management para Software, IN-COT-005, Marzo 2022
-7. The Issue of Monorepo and Polyrepo In Large Enterprises, Nicolas Brousse, 2019 
+6. GBM Release Management para Software, IN-COT-005, Mar 2022
+7. Brousse, N., 2019, The Issue of Monorepo and Polyrepo In Large Enterprises, Retrieved Jun 2, 2022 from [https://dl.acm.org/doi/10.1145/3328433.3328435](https://dl.acm.org/doi/10.1145/3328433.3328435)
 8. [Monorepo, Manyrepo, Metarepo. 2017](https://notes.burke.libbey.me/metarepo/)
 9. [Automatically detect changes and initiate different CodePipeline pipelines for a monorepo in CodeCommit](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/automatically-detect-changes-and-initiate-different-codepipeline-pipelines-for-a-monorepo-in-codecommit.html)
-10. [Savkin, V., Misconceptions about Monorepos: Monorepo != Monolith, 2019](https://blog.nrwl.io/misconceptions-about-monorepos-monorepo-monolith-df1250d4b03c)
-11. [Monorepo tools](https://monorepo.tools/)
+10. [Savkin V. Misconceptions about Monorepos: Monorepo != Monolith. 2019](https://blog.nrwl.io/misconceptions-about-monorepos-monorepo-monolith-df1250d4b03c)
+11. Monorepo tools [https://monorepo.tools/](https://monorepo.tools/)
 12. [Monorepo vs Multi-Repo: Pros and Cons of Code Repository Strategies, 2022](https://kinsta.com/blog/monorepo-vs-multi-repo/)
 13. [Monorepo, Manyrepo, Metarepo](https://notes.burke.libbey.me/metarepo/)
+14. Jaspan C., Jorde M, Knight A., Sadowski C, Smith E., Winter C. and Murphy-Hill E.  2018. Advantages and Disadvantages of a Monolithic Repository: A Case Study at Google. In Proceedings of the 40th International Conference on Software Engineering: Software Engineering in Practice (ICSE-SEIP’18). ACM, New York, NY, USA, 225–234. https://doi.org/10.1145/3183519.3183550
+15. Rachel Potvin and Josh Levenberg. 2016. Why Google Stores Billions of Lines of Code in a Single Repository. Commun. ACM 59, 7 (June 2016), 78–87. https://doi.org/10.1145/2854146
+16. Brito G., Terra R., Valente M., 2018, Monorepos: A Multivocal Literature Review CoRR abs/1810.09477
+(2018). http://arxiv.org/abs/1810.09477
+
   
