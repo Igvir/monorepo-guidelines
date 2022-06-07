@@ -71,17 +71,17 @@ El autor desea agradecer el confiable servicio de [Github](https://github.com/) 
 
 ## Referencias
 
-* [Monorepo](https://en.wikipedia.org/wiki/Monorepo)
-* [Monorepo’s for Microservices Architecture](https://dzone.com/articles/monorepos-for-microservices-commerce-architecture)
-* [Lerna.js](https://lerna.js.org/)
-* [How to structure microservices in your repository](https://softwareengineering.stackexchange.com/questions/386066/how-to-structure-microservices-in-your-repository)
-* [From Monolith to Monorepo](https://medium.com/@brockreece/from-monolith-to-monorepo-19d78ffe9175)
-* GBM Release Management para Software, IN-COT-005, Marzo 2022
-* The Issue of Monorepo and Polyrepo In Large Enterprises, Nicolas Brousse, 2019 
-* [Monorepo, Manyrepo, Metarepo. 2017](https://notes.burke.libbey.me/metarepo/)
-* [Automatically detect changes and initiate different CodePipeline pipelines for a monorepo in CodeCommit](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/automatically-detect-changes-and-initiate-different-codepipeline-pipelines-for-a-monorepo-in-codecommit.html)
-* [Savkin, V., Misconceptions about Monorepos: Monorepo != Monolith, 2019](https://blog.nrwl.io/misconceptions-about-monorepos-monorepo-monolith-df1250d4b03c)
-* [Monorepo tools](https://monorepo.tools/)
-* [Monorepo vs Multi-Repo: Pros and Cons of Code Repository Strategies, 2022](https://kinsta.com/blog/monorepo-vs-multi-repo/)
-* [Monorepo, Manyrepo, Metarepo](https://notes.burke.libbey.me/metarepo/)
+1. [Monorepo, Wikipedia](https://en.wikipedia.org/wiki/Monorepo)
+2. [Monorepo’s for Microservices Architecture](https://dzone.com/articles/monorepos-for-microservices-commerce-architecture)
+2. [Lerna.js](https://lerna.js.org/)
+4. [How to structure microservices in your repository](https://softwareengineering.stackexchange.com/questions/386066/how-to-structure-microservices-in-your-repository)
+5. [From Monolith to Monorepo](https://medium.com/@brockreece/from-monolith-to-monorepo-19d78ffe9175)
+6. GBM Release Management para Software, IN-COT-005, Marzo 2022
+7. The Issue of Monorepo and Polyrepo In Large Enterprises, Nicolas Brousse, 2019 
+8. [Monorepo, Manyrepo, Metarepo. 2017](https://notes.burke.libbey.me/metarepo/)
+9. [Automatically detect changes and initiate different CodePipeline pipelines for a monorepo in CodeCommit](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/automatically-detect-changes-and-initiate-different-codepipeline-pipelines-for-a-monorepo-in-codecommit.html)
+10. [Savkin, V., Misconceptions about Monorepos: Monorepo != Monolith, 2019](https://blog.nrwl.io/misconceptions-about-monorepos-monorepo-monolith-df1250d4b03c)
+11. [Monorepo tools](https://monorepo.tools/)
+12. [Monorepo vs Multi-Repo: Pros and Cons of Code Repository Strategies, 2022](https://kinsta.com/blog/monorepo-vs-multi-repo/)
+13. [Monorepo, Manyrepo, Metarepo](https://notes.burke.libbey.me/metarepo/)
   
