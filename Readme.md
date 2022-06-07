@@ -67,7 +67,7 @@ seguimiento de dependencias, reutilización de código y  revisión de código s
 ## Cultura organizacional
 
 La selección de la arquitectura mono-repositorio no debe asumirse como elemento puramente técnico. El modelo tiene ya varios años aplicandose y varias grandes empresas de software han optado por este enfoque para la organización de su código, incluidas Facebook, Google y Microsoft. Si bien la literatura consultada [7] indica que los estudios sobre el tema no son abundantes y que las referencias más comunes se encuentran en publicaciones y textos en internet [16]. Teniendo en cuenta que  entre las desventajas  del uso del repositoio único radica en el hecho de que *"algunos de los problemas asociados con multi-repositorios aún deben resolverse de alguna manera en un mono-repositorio"*[7], se hace necesario indagar sobre los elementos del entorno organizacional han permitido implementar exitosamente arquitecturas mono-repostorio en grandes empresas. 
-Netflix, un referente en desarrollo de micro-servicios y metodologías ágiles,y que utiliza un enfoque multi-repositorio en concordancia favorece una cultura de "libertad y responsabilidad" que "faculta a los ingenieros para crear soluciones utilizando cualquier herramienta que sienten que son las más adecuadas para las tareas".
+Netflix, un referente en desarrollo de micro-servicios y metodologías ágiles, utiliza un enfoque multi-repositorio que parece ser coherente con su manifiesto que favorece una cultura de "libertad y responsabilidad" que "faculta a los ingenieros para crear soluciones utilizando cualquier herramienta que sienten que son las más adecuadas para las tareas". Microsoft que no solo adoptó el enfoque de repositorio único, sino que propuso una ampliación de Git para manejar el mono-repositorios más grandes [22] es otra de las organizaciones que se ha enfoca en el cambio desde la cultura y mentalidad de crecimiento indivial y colectivo. 
 
 ## Agradecimientos
 
@@ -92,5 +92,6 @@ El autor desea agradecer el confiable servicio de [Github](https://github.com/) 
 15. Rachel Potvin and Josh Levenberg. 2016. Why Google Stores Billions of Lines of Code in a Single Repository. Commun. ACM 59, 7 (June 2016), 78–87. https://doi.org/10.1145/2854146
 16. Brito G., Terra R., Valente M., 2018, Monorepos: A Multivocal Literature Review CoRR abs/1810.09477
 (2018). http://arxiv.org/abs/1810.09477
+17. Harrys B. 2017. The largest Git repo on the planet. Retrieved Jun 7, 2022 from https://blogs.msdn.microsoft.com/bharry/2017/05/24/the-largest-git-repo-on-the-planet/
 
   
