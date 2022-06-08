@@ -1,3 +1,8 @@
+<!--
+  <<< Author notes: Header of the document >>>
+  Include a 1280×640 image, document title in sentence case, and a concise description in emphasis.
+-->
+
 # Desarrollo de aplicaciones con arquitectura mono-repositorio
 
 En el desarrollo de software utilizando arquitecturas de micro-servicios, el desarrollo ágil y los despliegues continuos, hay varios elementos necesarios para lograr que el diseño y la construcción respondan a la necesidad de comunicación continua, estandarización y eficiencia organizacional. Uno de estos elementos es la gestión del código fuente que, sin ser el único factor involucrado, puede ser el punto de partida para los beneficios o los problemas de la solución a desarrollar.
@@ -27,14 +32,14 @@ Una característica importante para un mono-repo es que, si bien contiene múlti
 El enfoque multi-repositorio, como su nombre lo indica, utiliza varios repositorios para albergar los múltiples componentes, librerías o servicios de un proyecto desarrollado por una empresa. En su forma más extrema, alojará cada conjunto mínimo de código utilizable o cada funcionalidad independiente (como un micro-servicio) en un repositorio individual.
 
 ### 4. Estructuras de repositorio de código fuente
----
-|       Estructura       |                    Implementación             |                              Implementada  por                          |
-| :--------------------: | :--------------------------------------------------------------------: | :--------------------------------------------------------------------: |
-| Multiples repositorios |   Un repositorio para cada componente o librería de código   |   Amazon, Netflix , Lyft                             |
-|    Mono-repositorio    | Un repositorio para todos los componentes o incluso para toda la compañía | Google, Facebook, Microsoft, Uber, Twitter, React, Angular, Babel, Kubernetes |
-| Híbrido: Multi-repositorios manejados como  mono-repositorio | Los cambios se realizan en multiples repositorios pero se gestionan como un mono-repo  | Android, chrome |
-| Híbrido: Mono-repo manejado como multi | Los cambios se realizan en un mono-repo pero luego se dividen en multiples repositorios de solo lectura para construcción o distribución | Symfony, Shopsys | 
----
+
+Estructura | Implementación |  Implementada  por
+------- | ---------------- | :---------:
+Multi-repo  | Un repositorio para cada componente o librería de código | Amazon, Netflix , Lyft 
+Mono-repositorio  | Un repositorio para todos los componentes o incluso para toda la compañía  | Google, Facebook, Microsoft, Uber, Twitter, React, Angular<br />     
+**Híbrido**: Multi-repo manejados como  mono-repo   | Los cambios se realizan en multiples repositorios pero se gestionan como un mono-repo | <br />Android, Chrome  
+**Híbrido**: Mono-repo manejado como multi | Los cambios se realizan en un mono-repo pero luego se dividen en multiples repositorios de solo lectura para construcción o distribución | <br />Symfony, Shopsys
+
 *Tabla 1: Estructuras de repositorio de código fuente* [7, 16]
 
 ### 5. CI/CD
@@ -55,7 +60,7 @@ La investigación arrojó que varios autores coinciden en algunas ventajas asoci
 - Simplificación del proceso de automatización y pruebas: El enfoque mono-repositorio ofrece también un único lugar para almacenar todas las configuraciones y pruebas. Dado que todo se encuentra dentro de un repositorio, es posible  configurar los procesos de CI/CD y el paquete una vez y luego simplemente reutilizar las configuraciones para compilar todos los paquetes antes de publicarlos en forma remota. Lo mismo ocurre con las pruebas unitarias, e2e y de integración: los procesos de CI pueden ser configurados para realizar todas las pruebas asociadas sin tener que lidiar con una configuración adicional.
 - Facilidad para reutilizar el código con paquetes compartidos mientras se mantienen aislados. El enfoque mono-repo permite reutilizar paquetes como referencias comunes que se compilan y consumen desde un único punto de entrada  mientras que se mantienen aislados los servicios unos de otros. 
   
- ## Desafíos de la arquitectura mono-repositorio
+## Desafíos de la arquitectura mono-repositorio
 
 Algunos elementos asociados a la adopción del enfoque mono-repositorio representan una desafío para el entorno empresarial:
 
@@ -70,6 +75,32 @@ La selección de la arquitectura mono-repositorio no debe asumirse como elemento
 Netflix, un referente en desarrollo de micro-servicios y metodologías ágiles, utiliza un enfoque multi-repositorio esto parece ser coherente con su manifiesto que favorece una cultura de "libertad y responsabilidad" que "faculta a los ingenieros para crear soluciones utilizando cualquier herramienta que sienten que son las más adecuadas para las tareas". Microsoft que no solo adoptó el enfoque de repositorio único, sino que propuso una ampliación de Git para manejar mono-repositorios más grandes [18] es otra de las organizaciones que se ha enfoca en el cambio desde la cultura y mentalidad de crecimiento individual y colectivo.
 Esta investigación no profundiza en mayor detalle sobre otros aspectos culturales de la organización pero existen evidencias para señalar que una cultura de colaboración abierta es requerida en el entorno organizacional que quiera implementar el enfoque mono-repositorio. Los informes de experiencia de Microsoft, Google y otras grandes empresas confirman que *el conocimiento del equipo es un factor importante en la elección de la estructura del repositorio con un esfuerzo por orientarse hacia un conocimiento holístico del equipo en lugar de un conocimiento colectivo del equipo*. La forma en que nos comunicamos y compartimos información ejerce un impacto directo en conocimiento del equipo, que es un *"mecanismo crítico para facilitar las actividades de innovación dentro del proceso de desarrollo de software"* [7]. Se ha demostrado que el software de alta calidad depende de la colaboración de alta calidad dentro de un equipo, con factores que influyen como
 confianza, valor compartido y coordinación de la experiencia. [4, 7] 
+
+## Convenciones, lineamientos y recomendaciones
+
+La adopción de un enfoque mono-repositorio puede ser una alternativa válida en el desarrollo de aplicaciones modernas. Considerando las ventajas y desafías encontrados por este estudio, es pertinente adoptar convenciones de desarrollo asi como para la organización de los artefactos asociados. Seguir algunos lineamientos facilita la toma de decisiones del equipo sobre este y otros temas de organización, evitando así retrasos en tareas básicas con el objetivo de concentrar más tiempo y energía en la innovación, generación de conocimiento y productividad.
+
+### Convenciones
+
+* Defina la estrategia de *Branching* a utilizar:
+    > Una estrategia de *branching* es la estrategia que adoptan los equipos de desarrollo de software al escribir, fusionar e implementar código cuando utilizan un sistema de control de versiones.
+
+    La definición es esencialmente un conjunto de reglas que los desarrolladores pueden seguir cómo convención para interactuar utilizando con una base de código compartida. Existen varias estrategias que se han vuelto de uso común, entre ellas están: *Gitflow* y *Trunk-based development*.
+* Defina una convención de nombres para el desarrollo.
+    >No usar las convenciones de nombre apropiadas genera confusión y complica al equipo de mantenimiento del código.
+
+    La convención de nombres puede agrupar cuales ramas estarán disponibles en su repositorio de forma permanente y cuales serán temporales. Su convención de nombres debe ser simple y directa.
+    
+ 
+    
+### Recomendaciones 
+
+* Se recomienda el usp de *GitFlow* como estrategia de *Branching* para equipos en formación o de nivel intermedio. Equipos de desarrollo avanzados y con altos niveles de automatización de tareas y un modelo de CI/CD maduro podrían pasar a *Trunk-based development* en coordinación con los involucrados del proyecto. 
+* Se recomienda utilizar nombres estándar para las ramas permanentes Las convenciones de nombre para las ramas. El desarrollo bajo el nombre o el prefijo *dev* debe utilizarse para la rama principal rama de desarrollo salvo en los casos en los que use la estrategia *trunk development*. La idea de la rama de desarrollo es agrupar los cambios en ella y restringir que los desarrolladores realicen cambios directamente en la rama maestra. Los cambios en la rama de desarrollo se revisan y, después de las pruebas, se fusionan. Los detalles del flujo deben definirse en la estrategia de *branching*. 
+* La rama maestra *Main* o *Master* es la rama predeterminada disponible en el repositorio de control de versiones. Debe ser estable todo el tiempo y no permitirá ningún registro directo. Solo puede fusionarlo después de la revisión del código. Todos los miembros del equipo son responsables de mantener el maestro estable y actualizado. 
+* Algunas estrategias optan por una tercera rama permanente para aseguramiento de la calidad o QA. QA o rama de prueba, contiene todo el código para las pruebas de QA y las pruebas automatizadas de todos los cambios implementados. Antes de que cualquier cambio pase al entorno de producción, debe someterse a pruebas de calidad para obtener una base de código estable. Su uso es recomendado para equipos medianos y grandes para la automatización de las pruebas.
+* Algunas ramas son temporales y cumplen funciones especificas por lo que sus nombres ayudan a entender su objetivo: 
+     
 
 ## Agradecimientos
 
