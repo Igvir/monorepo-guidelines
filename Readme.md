@@ -82,6 +82,8 @@ La adopción de un enfoque mono-repositorio puede ser una alternativa válida en
 
 ### Convenciones
 
+Una convención es un conjunto de estándares, reglas, normas o también criterios que son de aceptación general para el equipo de desarrollo. Su definición es muy importante para mantener un criterio de decisión a lo largo del ciclo de desarrollo.
+
 * Defina la estrategia de *Branching* a utilizar:
     > Una estrategia de *branching* es la estrategia que adoptan los equipos de desarrollo de software al escribir, fusionar e implementar código cuando utilizan un sistema de control de versiones.
 
@@ -91,16 +93,27 @@ La adopción de un enfoque mono-repositorio puede ser una alternativa válida en
 
     La convención de nombres puede agrupar cuales ramas estarán disponibles en su repositorio de forma permanente y cuales serán temporales. Su convención de nombres debe ser simple y directa.
     
- 
+### Lineamientos
+
+Los lineamientos planteados en este estudio describen las etapas, fases, pautas y formatos necesarios para desarrollar el desarrollo de software con arquitectura mono-repositorio:
+
+* Todo proyecto de desarrollo debe definir un proceso de Gestión de Versiones (*Release Management*). La gestión de versiones es el sistema que le permite controlar el ciclo de vida del desarrollo de software, desde la planificación hasta las pruebas y luego la versión. El proceso de *Release Management* debe establecer lineamientos detallados para cada etapa del proceso, sus transiciones y recomendar el o los sistemas y herramientas de gestión de código fuente donde se alojará el repositorio de código. Las etapas del ciclo de vida del desarrollo de software comúnmente definidas son: Plan, Construcción (*Build*), Pruebas (*Test*), Despliegue (*Deploy*) y Revisión (*Review*). Cuando se completan todas la etapas se tiene una versión.
+
     
 ### Recomendaciones 
+
+Las recomendaciones incluidas en este estudio son  propuestas para el desarrollo de aplicaciones con especial énfasis en aquella que opten por el uso de un enfoque monorepositorio total o parcial. Dada la naturaleza única de cada proyecto estas deben ser analizadas y adaptadas al entorno cuando se necesario. Se invita a la comunidad a ampliar esta investigación y su alcance corregir algunos aspectos, emprender mejoras o incluir nuevos elementos de interés para el desarrollo de software.  
 
 * Se recomienda el usp de *GitFlow* como estrategia de *Branching* para equipos en formación o de nivel intermedio. Equipos de desarrollo avanzados y con altos niveles de automatización de tareas y un modelo de CI/CD maduro podrían pasar a *Trunk-based development* en coordinación con los involucrados del proyecto. 
 * Se recomienda utilizar nombres estándar para las ramas permanentes Las convenciones de nombre para las ramas. El desarrollo bajo el nombre o el prefijo *dev* debe utilizarse para la rama principal rama de desarrollo salvo en los casos en los que use la estrategia *trunk development*. La idea de la rama de desarrollo es agrupar los cambios en ella y restringir que los desarrolladores realicen cambios directamente en la rama maestra. Los cambios en la rama de desarrollo se revisan y, después de las pruebas, se fusionan. Los detalles del flujo deben definirse en la estrategia de *branching*. 
 * La rama maestra *Main* o *Master* es la rama predeterminada disponible en el repositorio de control de versiones. Debe ser estable todo el tiempo y no permitirá ningún registro directo. Solo puede fusionarlo después de la revisión del código. Todos los miembros del equipo son responsables de mantener el maestro estable y actualizado. 
 * Algunas estrategias optan por una tercera rama permanente para aseguramiento de la calidad o QA. QA o rama de prueba, contiene todo el código para las pruebas de QA y las pruebas automatizadas de todos los cambios implementados. Antes de que cualquier cambio pase al entorno de producción, debe someterse a pruebas de calidad para obtener una base de código estable. Su uso es recomendado para equipos medianos y grandes para la automatización de las pruebas.
 * Algunas ramas son temporales y cumplen funciones especificas por lo que sus nombres ayudan a entender su objetivo: 
-     
+  * Bug Fix: Para atender incidentes sobre código estable
+  * Hot Fix: Para atender incidentes sobre la etapa de revisión
+  * Feature Branches: Para desarrollo de tareas concretas
+  * Experimental Branches: Para explorar funciones
+  * WIP branches: Para trabajo temporal que puede demorar un poco más en completarse.
 
 ## Agradecimientos
 
