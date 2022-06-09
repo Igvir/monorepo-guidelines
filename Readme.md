@@ -5,9 +5,9 @@
 
 # Desarrollo de aplicaciones con arquitectura mono-repositorio
 
-<H4> Igvir Ramirez V.</H4>
-<H4> iramirez@gbm.net</H4>
-<H4> Junio, 2022.</H4>
+<H4> Igvir Ramirez V.<BR/>
+
+Junio, 2022.</H4>
 <BR/>
 
 Palabras clave: mono-repositorio, control de versiones, monorepo.
