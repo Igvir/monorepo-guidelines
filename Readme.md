@@ -129,6 +129,34 @@ Las recomendaciones incluidas en este estudio son  propuestas para el desarrollo
   * *Feature Branches*: Para desarrollo de tareas concretas
   * *Experimental Branches*: Para explorar funciones
   * *WIP Branches*: Para trabajo temporal que puede demorar un poco más en completarse.
+* En enfoques mono-repositorios se recomienda utiliza una convención de nombres que responda al propósito y la relación de los proyectos que se agrupan. Por ejemplo, si el mono-repo agrupa componentes separados de una misma aplicación como por ejemplo el desarrollo web y móvil la convención recomendada es incluir un prefijo o un sufijo en cada nombre de rama:
+    ```txt
+    web-app/main
+    web-app/dev
+
+    ios-app/main
+    android-app/main
+    ```
+  
+  En el caso de proyectos mono-repositorios que agrupan micro-servicios se recomienda adoptar una convención de nombre que identifique cada servicio, siempre utilizando un nombre corto pero especifico o un código para cada servicio:
+    ```txt
+    svc-1/main
+    svc-1/dev
+
+    svc-2/main
+    ```
+  Cuando estos servicios hacen parte de un API se recomienda usar la rama principal (*main*) y desarrollo (*dev*) para agrupar las versiones de dicho API:
+    ```txt
+    main  <-- Contiene la versión estable del API
+    dev   <-- Agrupa versiones estables de servicios
+    release/1.0 <-- Agrupa los servicios del API 1.0
+     
+    api/svc-1/main
+    api/svc-1/dev
+
+    api/svc-2/main
+    ```
+
 
 ## Agradecimientos
 
