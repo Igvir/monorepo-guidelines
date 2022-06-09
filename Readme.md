@@ -10,6 +10,9 @@
 <H4> Junio, 2022.</H4>
 <BR/>
 
+Palabras clave: mono-repositorio, control de versiones, monorepo.
+
+<BR/>
 
 ## Resumen
 
