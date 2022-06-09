@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Si usa este documento, por favor incluya la cita a continuación."
+authors:
+- family-names: "Ramirez V."
+  given-names: "Igvir"
+  orcid: "https://orcid.org/0000-0001-6850-1344"
+title: "Desarrollo de aplicaciones con arquitectura monorepositorio"
+version: 0.1.8
+date-released: 2022-06-08
+url: "https://github.com/Igvir/monorepo-rules"
