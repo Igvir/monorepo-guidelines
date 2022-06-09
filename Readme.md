@@ -6,7 +6,6 @@
 # Desarrollo de aplicaciones con arquitectura mono-repositorio
 
 <H4> Igvir Ramirez V.<BR/>
-
 Junio, 2022.</H4>
 <BR/>
 
