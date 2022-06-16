@@ -2,8 +2,11 @@
   <<< Author notes: Header of the document >>>
   Include a 1280×640 image, document title in sentence case, and a description in emphasis.
 -->
+<p align="center">
 
 # Desarrollo de aplicaciones con arquitectura mono-repositorio
+
+</p>
 
 <H4> Igvir Ramirez V.<BR/>
 Junio, 2022.</H4>
@@ -15,14 +18,18 @@ Palabras clave: mono-repositorio, control de versiones, monorepo.
 
 ## Resumen
 
+<p align="justify">
 Los Mono-repos (repositorios monolíticos), son utilizados por grandes empresas, como Google y Facebook, y por proyectos de código abierto de gran alcance como: [React](https://github.com/facebook/react/tree/master/packages), [Laravel](https://laravel.com/), [Babel](https://github.com/babel/babel/blob/master/doc/design/monorepo.md) o [NixOS](https://github.com/NixOS/nixpkgs/). Este trabajo realiza un recorrido por los conceptos para dar visión general de la definición, las características de una estructura multi-repositorio, y las características de los mono-repositorios, así como de sus beneficios y desafíos. Con el apoyo de la investigación bibliográfica se plantearon alguna preguntas de investigación para luego realizar una propuesta de lineamientos generales para el desarrollo de aplicaciones con arquitectura mono-repositorio. Los hallazgos son varios pero destacan principalmente  en dos áreas. En primer lugar  en el área técnica, donde el uso de herramientas y técnicas representa un elemento de decision que considere los beneficios, la relaciones entre los diferentes proyectos y los retos a la hora de elegir arquitectura mono-repositorio. Otra área en la que la investigación encontró hallazgos fue el del entorno organizacional, se encontraron referencias a elementos culturales relevantes en el éxito de la adopción de arquitectura mono-repositorio.  Actualmente, se puede observar un aumento en los sistemas de TI complejidad impulsada por la adopción de arquitectura orientada a servicios, micro-servicios y sin-servidor (*serverless* por su nombre en inglés). Por lo tanto, las empresas se benefician de un repositorio único debido a la mejora del conocimiento del equipo. Conocimiento que resulta de la disminución de las barreras entre los diferentes actores que típicamente se presentan en el trabajo interdepartamental, facilita la movilidad de roles entre los desarrolladores y puede influir en la mejora de la calidad del trabajo en equipo. Los desafíos puede ser importantes por lo que se debe considerar la salud del código, la complejidad de la solución y la inversión en tiempo para incorporar  herramientas tanto para el desarrollo como para la ejecución. 
+</p>
 
 ## Introducción
 
+<p align="justify">
 En el desarrollo de software utilizando arquitecturas de micro-servicios, el desarrollo ágil y los despliegues continuos, hay varios elementos necesarios para lograr que el diseño y la construcción respondan a la necesidad de comunicación continua, estandarización y eficiencia organizacional. Uno de estos elementos es la gestión del código fuente que, sin ser el único factor involucrado, puede ser el punto de partida para los beneficios o los problemas de la solución a desarrollar.
 Cuando una organización asume el reto de construcción de soluciones de *software* suficientemente robustas para escalar a un nivel empresarial, debe tener en consideración estrategias de gestión de todos los recursos y muy especialmente de la gestión del código, dado que es muy fácil dejarse llevar por la tentación de iniciar la construcción y postergar la definición de lineamientos. Incluso es común que se pierdan de vista y que, al no aplicarse desde el inicio, su ausencia genere un efecto de bola de nieve y en consecuencia se vuelva un tema cada vez más grande a medida que el proyecto avanza.
 Tener un lineamiento inicial, fomentar una disciplina interna, velar por el uso de estas línea de instrucción y hacerlas propias de la construcción, facilita que el proceso se vuelva natural al punto que todos puedan "saltar" al proceso de producción con una estrategia exitosa.
 Ante esta necesidad, se plantean el estudio de los enfoques mono-repositorio versus el multi-repositorio, conocer su estructura, ventajas y desventajas. Además se proponen lineamientos generales para su adopción basados en la bibliografía disponible y la experiencia de otras organizaciones referentes en la industria. 
+</p>
 
 ## Conceptos
 
