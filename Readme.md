@@ -174,6 +174,9 @@ Las recomendaciones incluidas en este estudio son  propuestas para el desarrollo
     api/svc-2/main
     ```
 
+## Conclusiones
+
+Esta investigación ha descrito el uso de arquitectura mono-repositorio en el desarrollo de aplicaciones, especialmente aquellas que se enfocan en el desarrollo de micro-servicios. Se identificaron sus ventajas y desafíos y se definieron lineamientos y recomendaciones junto con los argumentos a favor del uso de este enfoque. Se destaca el elemento cultural de la organización como un factor importante en el éxito así como la disciplina del equipo en la adopción del modelo por lo que se plantean lineamientos y recomendaciones que servirán de base a equipos que adopten el modelo. Una relación más directa sobre el impacto en la calidad o la productividad derivaba de la adopción del modelo requeriría investigación más detallada. Como todo modelo arquitectónico el uso de mono-repositorios es una alternativa válida dentro del portafolio de opciones que buscan agilizar y mejorar el crecimiento del equipo en el marco de desarrollos ágiles de de calidad empresarial.
 
 ## Agradecimientos
 
